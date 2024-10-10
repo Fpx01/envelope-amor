@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartinha de Amor</title>
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -11,17 +12,11 @@
         <div class="envelope-wrapper">
             <div class="envelope">
                 <div class="letter">
-                    <div class="close-button">✖</div>
                     <div class="text">
                         <strong>Olá Nicoly, amor da minha vida.</strong>
                         <p>
-                            Fiz essa cartinha web só para te dizer que eu te amo muito e sou, e sempre serei, completamente apaixonado por você.
-                            <br><br>
-                            Amor, você é a dona dos meus pensamentos de cada dia e da minha felicidade. ❤
-                            <br><br>
-                            Obrigado por cada momento e por ser exatamente quem você é. 🥰
-                            <br><br>
-                            Com muito amor, seu namorado.
+                            Fiz esse cartinha web kkk só para te dizer que você é a garota mais linda desse mundo e a melhor namorada que eu poderia ter na minha vida!
+                            Eu te amo muito e sou completamente apaixonado em você minha princesa. ♥♥
                         </p>
                     </div>
                 </div>
@@ -31,15 +26,8 @@
     </div>
     <script>
         const envelope = document.querySelector('.envelope-wrapper');
-        const closeButton = document.querySelector('.close-button');
-
         envelope.addEventListener('click', () => {
             envelope.classList.toggle('flap');
-        });
-
-        closeButton.addEventListener('click', (e) => {
-            envelope.classList.remove('flap');
-            e.stopPropagation();
         });
     </script>
 </body>
